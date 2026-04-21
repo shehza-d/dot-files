@@ -1,0 +1,3 @@
+- `core/` → your config (settings, keymaps, setup)
+- `plugins/` → each file = one plugin config
+- lazy.nvim automatically loads everything inside `plugins/`
