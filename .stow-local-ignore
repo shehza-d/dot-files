@@ -3,8 +3,10 @@
 # https://www.gnu.org/software/stow/manual/html_node/Types-And-Syntax-Of-Ignore-Lists.html
 
 # my custom
+Brewfile
 vs-code-2025
 nvim
+old-setup
 
 # defaults
 RCS

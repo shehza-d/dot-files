@@ -11,5 +11,7 @@ A backup of zsh, vs code and vim settings
     brew bundle dump --describe
 ```
 
-- dfdfdf 
-dffd
+- some dotfile repo examples
+    - https://github.com/omerxx/dotfiles
+    - https://github.com/WahajGul/dotFiles/tree/main/Scripts
+    - https://github.com/ThePrimeagen/.dotfiles 

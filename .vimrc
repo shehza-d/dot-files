@@ -1,7 +1,27 @@
-# Source - https://stackoverflow.com/a/18948530
-# Posted by Kent, modified by community. See post 'Timeline' for change history
-# Retrieved 2026-04-07, License - CC BY-SA 4.0
+" Line numbers
+set number relativenumber
 
-autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
-autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+" Better indentation
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+
+" Search improvements
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+" Show cursor position
+set ruler
+
+" Enable mouse (optional but useful)
+set mouse=a
+
+" Keep some lines visible when scrolling
+set scrolloff=8
+
+" Faster updates
+set updatetime=300
 
