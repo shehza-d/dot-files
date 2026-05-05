@@ -1,0 +1,35 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "f9",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "clear && g++ ${file} -o compiled && ./compiled\n",
+    },
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "copyFilePath",
+    "when": "!editorFocus",
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "-copyFilePath",
+    "when": "!editorFocus",
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "copyFilePath",
+    "when": "editorFocus",
+  },
+  {
+    "key": "ctrl+k ctrl+alt+c",
+    "command": "-copyFilePath",
+    "when": "editorFocus",
+  },
+]

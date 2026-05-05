@@ -1,0 +1,52 @@
+// Place your key bindings in this file to override the defaults
+[
+   {
+    "key": "f7",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "clear && python3 ${file}\n",
+    },
+  },
+  {
+    "key": "f8",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "clear && node --watch ${file}\n",
+    },
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "editorTextFocus",
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "copyFilePath",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "-copyFilePath",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+shift+alt+t",
+    "command": "workbench.action.terminal.openNativeConsole",
+    "when": "!isSessionsWindow && !terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!isSessionsWindow && !terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "copyFilePath",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+k ctrl+alt+c",
+    "command": "-copyFilePath",
+    "when": "editorFocus"
+  },
+]
