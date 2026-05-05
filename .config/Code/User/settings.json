@@ -1,0 +1,139 @@
+{
+  "vim.normalModeKeyBindings": [
+    // File search
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["workbench.action.quickOpen"],
+    },
+
+    // Find in file
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["actions.find"],
+    },
+
+    // Toggle sidebar
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"],
+    },
+
+    // Save file
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"],
+    },
+
+    // Close file
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"],
+    },
+
+    // Next tab
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["workbench.action.nextEditor"],
+    },
+
+    // Previous tab
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.previousEditor"],
+    },
+
+    // Terminal toggle
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"],
+    },
+
+    // Comment line
+    {
+      "before": ["<leader>", "/"],
+      "commands": ["editor.action.commentLine"],
+    },
+    {
+      "before": [""],
+    },
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"],
+    },
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+  ],
+  "files.associations": {
+    ".env*": "dotenv",
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000",
+        },
+      },
+    ],
+  },
+  "window.newWindowProfile": "Default",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
+  "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
+  "workbench.iconTheme": "material-icon-theme",
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.menuBarVisibility": "compact",
+  "workbench.settings.applyToAllProfiles": [
+    "editor.defaultFormatter",
+    "editor.minimap.autohide",
+    "editor.minimap.scale",
+    "editor.cursorBlinking",
+    "window.titleSeparator",
+    "window.title",
+    "chat.disableAIFeatures",
+    "workbench.tips.enabled",
+    "material-icon-theme.hidesExplorerArrows",
+    "explorer.compactFolders",
+    "editor.matchBrackets",
+    "files.trimTrailingWhitespace",
+    "files.insertFinalNewline",
+    "scm.diffDecorations",
+    "editor.snippetSuggestions",
+  ],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.autohide": "mouseover",
+  "editor.minimap.scale": 2,
+  "editor.cursorBlinking": "expand",
+  "window.titleSeparator": " / ",
+  "window.title": "${rootName}${separator}${profileName}${separator}Shehzad",
+  "[cpp]": {
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+  },
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+  },
+  "chat.disableAIFeatures": true,
+  "workbench.startupEditor": "none",
+  "chat.tips.enabled": false,
+  "workbench.tips.enabled": false,
+  "material-icon-theme.hidesExplorerArrows": true,
+  "explorer.compactFolders": false,
+  "editor.matchBrackets": "never",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "scm.diffDecorations": "none",
+  "editor.snippetSuggestions": "top",
+  "update.showReleaseNotes": false,
+}

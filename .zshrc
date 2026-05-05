@@ -49,6 +49,8 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 alias -g la='ls -a --color'
 alias -g C=' xclip -selection clipboard'
 alias -g V='xclip -o'
+alias -g mkdirvu='mkdir normal/question normal/solution practical-lab/question practical-lab/solution -p'
+
 # alias ll="ls -la"
 # alias la="ls -A"
 # alias l="ls -CF"

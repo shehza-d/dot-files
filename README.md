@@ -3,7 +3,7 @@
 A backup of zsh, vs code and vim settings
 
 - [Stow has forever changed the way I manage my dotfiles](https://youtu.be/y6XCebnB9gs?si=ri64u16RwfDk-zn5)
-    - ```bash stow . ```
+    - `stow .`
 
 - List all packages in a file
 
