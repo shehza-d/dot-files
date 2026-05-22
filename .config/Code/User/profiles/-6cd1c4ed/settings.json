@@ -54,4 +54,5 @@
     "strings": "off",
   },
   "editor.snippetSuggestions": "top",
+  "window.commandCenter": false,
 }

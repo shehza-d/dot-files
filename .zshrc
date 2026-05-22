@@ -7,8 +7,8 @@ autoload -U colors
 export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 
 # HomeBrew path for Linux
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" 
-# HomeBrew path for Mac 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# HomeBrew path for Mac
 # eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # ----------------------------
@@ -122,3 +122,38 @@ clear-keep-buffer () {
 }
 zle -N clear-keep-buffer
 bindkey '^Xl' clear-keep-buffer
+
+
+cr() {
+  local folder="$1"
+  local flags="${2:--cjr}"
+
+  if [[ -z "$folder" ]]; then
+    echo "Usage: cr <folder-name> [-cjr]"
+    return 1
+  fi
+
+  mkdir -p "$folder"
+  cd "$folder" || return
+
+cat > index.html <<EOF
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>$(basename "$PWD")</h1>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+EOF
+
+  [[ "$flags" == *c* ]] && touch style.css
+  [[ "$flags" == *j* ]] && touch app.js
+  [[ "$flags" == *r* ]] && touch README.md
+}

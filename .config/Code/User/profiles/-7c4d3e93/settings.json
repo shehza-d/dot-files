@@ -34,10 +34,20 @@
   "git.openRepositoryInParentFolders": "never",
   "explorer.confirmDragAndDrop": false,
   "editor.quickSuggestions": {
-    "other": "off",
+    "other": "on",
     "comments": "off",
-    "strings": "off"
+    "strings": "off",
   },
   "editor.suggestOnTriggerCharacters": false,
   "liveServer.settings.NoBrowser": true,
+  "editor.hover.enabled": "onKeyboardModifier",
+  "editor.suggest.showInlineDetails": false,
+  "editor.suggest.showStatusBar": false,
+  "editor.suggest.preview": false, // ghost text
+  "editor.parameterHints.enabled": false,
+  "editor.inlineSuggest.suppressSuggestions": false,
+  "html.hover.documentation": false,
+  "css.hover.documentation": false,
+  "terminal.integrated.initialHint": false,
 }
+
