@@ -22,13 +22,28 @@
 		"context": "Editor && vim_mode == normal",
 		"bindings": {
 			"space p": "command_palette::Toggle",
-			"space ;": "workspace::ToggleLeftDock",
+			// "space ;": "workspace::ToggleLeftDock",
 			"space c l": "workspace::ToggleCenteredLayout",
-			"space e": "project_panel::ToggleFocus",
-			"space \\": "project_panel::CollapseAllEntries",
-			"space o": "outline::Toggle",
-			"space w": "pane::CloseActiveItem",
-			"space q a": "pane::CloseAllItems",
+			// "space e": "project_panel::ToggleFocus",
+			// "space \\": "project_panel::CollapseAllEntries",
+			// "space o": "outline::Toggle",
+			// "space w": "pane::CloseActiveItem",
+			// "space q a": "pane::CloseAllItems",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-[": "editor::Fold",
+			"ctrl-]": "editor::UnfoldLines",
+			"ctrl-alt-[": "editor::FoldAll",
+			"ctrl-alt-]": "editor::UnfoldAll",
+		},
+	},
+	{
+		"context": "Editor",
+		"unbind": {
+			"ctrl-shift-i": "editor::Format",
 		},
 	},
 ]

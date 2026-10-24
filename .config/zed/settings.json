@@ -7,61 +7,47 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+	"agent_servers": {
+		"codex-acp": { "type": "registry" },
+	},
 	"git": {
-  "inline_blame": {
-   "show_commit_summary": true,
-   "delay_ms": 100,
-   "enabled": false,
-   "location": "status_bar"
-  }
- },
- "vertical_scroll_margin": 5.0,
- "extend_comment_on_newline": false,
- "hover_popover_delay": 1500,
- "hover_popover_hiding_delay": 200,
- "hover_popover_enabled": true,
- "format_on_save": "modifications_if_available",
+		"inline_blame": {
+			"show_commit_summary": true,
+			"delay_ms": 100,
+			"enabled": false,
+			"location": "status_bar",
+		},
+	},
+	"vertical_scroll_margin": 5.0,
+	"extend_comment_on_newline": false,
+	"hover_popover_delay": 1500,
+	"hover_popover_hiding_delay": 200,
+	"hover_popover_enabled": true,
+	"format_on_save": "modifications_if_available",
 	"tab_size": 4,
 	"show_whitespaces": "none",
-	"drag_and_drop_selection": {
-		"enabled": false,
-	},
-	"markdown_preview": {
-		"font_size": 24.0,
-	},
+	"drag_and_drop_selection": { "enabled": false },
+	"markdown_preview": { "font_size": 24.0 },
 	"agent_buffer_font_size": 23.0,
 	"agent_ui_font_size": 18.0,
-	"prettier": {
-		"allowed": true,
-	},
-	"vim": {
-		"toggle_relative_line_numbers": true,
-	},
+	"prettier": { "allowed": true },
+	"vim": { "toggle_relative_line_numbers": true },
 	"relative_line_numbers": "wrapped",
 	"cli_default_open_behavior": "new_window",
 	"proxy": "",
-	"disable_ai": true,
-	"cursor_animation": {
-		"enabled": false,
-	},
-	"outline_panel": {
-		"dock": "left",
-	},
-	"collaboration_panel": {
-		"dock": "left",
-	},
+	"disable_ai": false,
+	"cursor_animation": { "enabled": false },
+	"outline_panel": { "dock": "left" },
+	"collaboration_panel": { "dock": "left" },
 	"agent": {
 		"dock": "right",
 		"favorite_models": [],
 		"model_parameters": [],
 	},
-	"git_panel": {
-		"dock": "left",
-	},
-	"session": {
-		"trust_all_worktrees": true,
-	},
+	"git_panel": { "dock": "left" },
+	"session": { "trust_all_worktrees": true },
 	"terminal": {
+		"button": false,
 		"font_size": 22.0,
 		"env": {},
 		"font_family": "JetBrains Mono",
@@ -72,12 +58,8 @@
 		"auto_fold_dirs": false,
 	},
 	"base_keymap": "VSCode",
-	"preview_tabs": {
-		"enabled": false,
-	},
-	"sticky_scroll": {
-		"enabled": true,
-	},
+	"preview_tabs": { "enabled": false },
+	"sticky_scroll": { "enabled": true },
 	"cursor_blink": false,
 	"buffer_font_family": "JetBrains Mono",
 	"file_types": {
@@ -109,16 +91,12 @@
 	// "vim_mode": false,
 	// },
 	// },
-	"title_bar": {
-		"show_user_picture": false,
-	},
-	"toolbar": {
-		// "quick_actions": false,
-	},
+	"title_bar": { "show_user_picture": false },
 	"indent_guides": { "enabled": false },
-	// "show_wrap_guides": false,
 	"scrollbar": { "show": "never" },
 	"gutter": { "min_line_number_digits": 0 },
+	// "toolbar": { "quick_actions": false },
+	// "show_wrap_guides": false,
 	// "show_completions_on_input": false,
 	// "show_completion_documentation": false,
 	// "inline_code_actions": false
