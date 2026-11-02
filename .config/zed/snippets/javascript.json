@@ -1,0 +1,10 @@
+{
+	"console log": {
+		"prefix": "cl",
+		"body": ["console.log(\"🚀 ${1:variable} >> \", ${1:variable});", "$0"]
+	},
+	"arrow function": {
+		"prefix": "afn",
+		"body": ["const ${1:name} = async (${2:params}) => {", "  $0", "};"]
+	}
+}

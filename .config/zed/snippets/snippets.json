@@ -1,0 +1,12 @@
+{
+	"Try Catch": {
+		"prefix": "tryc",
+		"body": [
+			"try {",
+			"  $1",
+			"} catch (err) {",
+			"    console.error(err);",
+			"}"
+		]
+	}
+}

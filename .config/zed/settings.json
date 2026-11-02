@@ -79,7 +79,7 @@
 	"theme": {
 		"mode": "dark",
 		"light": "One Light",
-		"dark": "One Dark",
+		"dark": "Proto Monokai V (Soft)",
 	},
 	// "profiles": {
 	// "CP Mode": {
@@ -100,4 +100,5 @@
 	// "show_completions_on_input": false,
 	// "show_completion_documentation": false,
 	// "inline_code_actions": false
+	"languages": { "C++": { "formatter": "language_server" } },
 }

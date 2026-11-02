@@ -46,4 +46,10 @@
 			"ctrl-shift-i": "editor::Format",
 		},
 	},
+	{
+		"bindings": {
+			"ctrl-s": "project_panel::Toggle",
+		},
+	},
+	// testing
 ]
